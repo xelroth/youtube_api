@@ -59,8 +59,8 @@ class YouTubeVideoProcessor:
             })
         except RuntimeError as e:
             return self.response_handler.send_response(500, str(e))
-        
 def main():
+    # this function is for TEST! You can remove the main function 
     video_link = 'https://youtu.be/QrxfKXJMu4s?si=C8q5obRfzeeuYl4C'
     return YouTubeVideoProcessor(video_link).process_video()
 
